@@ -1,5 +1,5 @@
 package model;
 
 public enum MagnitudeOfPoints {
-	SMALL,NORMALLY,MANY;
+  SMALL, NORMALLY, MANY;
 }

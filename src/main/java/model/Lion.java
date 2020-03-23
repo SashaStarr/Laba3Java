@@ -1,16 +1,21 @@
 package model;
 
 public class Lion extends AbstractAnimals {
-	public Lion(int foodConsumedInKilo) {
-		super(foodConsumedInKilo);
-	}
-	private int sizeOfManeInÑentimeters;
-	public int getSizeOfManeInÑentimeters() {
-		return sizeOfManeInÑentimeters;
-	}
-	public void setSizeOfManeInÑentimeters(int sizeOfManeInÑentimeters) {
-		this.sizeOfManeInÑentimeters = sizeOfManeInÑentimeters;
-	}
 
-	
+  private int sizeOfManeInSm;
+
+  public int getSizeOfManeInCentimeters() {
+    return sizeOfManeInSm;
+  }
+
+  public void setSizeOfManeInCentimeters(int sizeOfManeInCentimeters) {
+    this.sizeOfManeInSm = sizeOfManeInCentimeters;
+  }
+
+  public Lion(int foodConsumedInKilo, String kind, double sizeInSm, int weightInKg, String point,
+      int ageInYears, boolean huntForPrey, int sizeOfManeInSm) {
+    super(foodConsumedInKilo, sizeInSm, kind, weightInKg, point, ageInYears, huntForPrey);
+    this.sizeOfManeInSm = sizeOfManeInSm;
+  }
+
 }

@@ -1,19 +1,20 @@
 package model;
-import model.MagnitudeOfPoints;
 
+public class Cheetah extends AbstractAnimals {
 
-public class Cheetah extends AbstractAnimals  {
-	public Cheetah(int foodConsumedInKilo) {
-		super(foodConsumedInKilo);
-	}
-	private MagnitudeOfPoints numberBlackSpots;
-	public MagnitudeOfPoints getNumberBlackSpots() {
-		return numberBlackSpots;
-	}
-	public void setNumberBlackSpots(MagnitudeOfPoints numberBlackSpots) {
-		this.numberBlackSpots = numberBlackSpots;
-	}
-	public Cheetah(MagnitudeOfPoints numberBlackSpots) {
-		this.numberBlackSpots = numberBlackSpots;
-	}
+  private MagnitudeOfPoints numberBlackSpots;
+
+  public MagnitudeOfPoints getNumberBlackSpots() {
+    return numberBlackSpots;
+  }
+
+  public void setNumberBlackSpots(MagnitudeOfPoints numberBlackSpots) {
+    this.numberBlackSpots = numberBlackSpots;
+  }
+
+  public Cheetah(int foodConsumedInKilo, String kind, double sizeInM, int weightInKg, String point,
+      int ageInYears, boolean huntForPrey, MagnitudeOfPoints numberBlackSpots) {
+    super(foodConsumedInKilo, sizeInM, kind, weightInKg, point, ageInYears, huntForPrey);
+    this.numberBlackSpots = numberBlackSpots;
+  }
 }
