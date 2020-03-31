@@ -19,6 +19,8 @@ public class SearchAnimalsManagerUtils {
 
   static class SorterByFoodConsumedInKilo implements Comparator<AbstractAnimals>,Serializable {
 
+    private static final long serialVersionUID = 1L;
+
     @Override
     public int compare(AbstractAnimals firstAnimal, AbstractAnimals secondAnimal) {
       return firstAnimal.getFoodConsumedInKilo() - secondAnimal.getFoodConsumedInKilo();
@@ -31,7 +33,7 @@ public class SearchAnimalsManagerUtils {
     animals.sort(sortType == SortType.ASC ? comparator : comparator.reversed());
   }
 
-  static class SorterByPointLions implements Comparator<AbstractAnimals>,Serializable {
+  class SorterByPointLions implements Comparator<AbstractAnimals>,Serializable {
 
     @Override
     public int compare(AbstractAnimals firstAnimal, AbstractAnimals secondAnimal) {

@@ -17,4 +17,16 @@ public class Cheetah extends AbstractAnimals {
     super(foodConsumedInKilo, sizeInM, kind, weightInKg, point, ageInYears, huntForPrey);
     this.numberBlackSpots = numberBlackSpots;
   }
+
+  @Override
+  public String toString() {
+    return "Cheetah [numberBlackSpots=" + numberBlackSpots + "]";
+  }
+  public String getHeaders() {
+    return super.getHeaders() + ", numberBlackSpots";
+  }
+
+  public String toCSV() {
+    return super.toCSV() + ", " + numberBlackSpots;
+  }
 }

@@ -24,8 +24,8 @@ class AnimalsManagerTest extends AbstractSearchAnimalsManager {
   public void testFindAnimalToEatMeatInKilo() {
     List<AbstractAnimals> animals = searchAnimalsManager.findAnimalToEatMeatInKilo(1);
     assertEquals(3, animals.size());
-    assertEquals(4, animals.get(0).getFoodConsumedInKilo());
-    assertEquals(2, animals.get(1).getFoodConsumedInKilo());
+    assertEquals(2, animals.get(0).getFoodConsumedInKilo());
+    assertEquals(4, animals.get(1).getFoodConsumedInKilo());
     assertEquals(3, animals.get(2).getFoodConsumedInKilo());
 
   }

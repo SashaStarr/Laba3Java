@@ -18,4 +18,15 @@ public class Lion extends AbstractAnimals {
     this.sizeOfManeInSm = sizeOfManeInSm;
   }
 
+  @Override
+  public String toString() {
+    return "Lion [sizeOfManeInSm=" + sizeOfManeInSm + "]";
+  }
+  public String getHeaders() {
+    return super.getHeaders() + ", sizeOfManeInSm";
+  }
+
+  public String toCSV() {
+    return super.toCSV() + ", " + sizeOfManeInSm;
+  }
 }

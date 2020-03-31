@@ -17,4 +17,15 @@ public class Vulture extends AbstractAnimals {
     this.wingspanInCentimeters = wingspanInCentimeters;
   }
 
+  @Override
+  public String toString() {
+    return "Vulture [wingspanInCentimeters=" + wingspanInCentimeters + "]";
+  }
+  public String getHeaders() {
+    return super.getHeaders() + ", wingspanInCentimeters";
+  }
+
+  public String toCSV() {
+    return super.toCSV() + ", " + wingspanInCentimeters;
+  }
 }

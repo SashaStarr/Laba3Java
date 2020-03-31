@@ -19,8 +19,8 @@ public abstract class AbstractSearchAnimalsManager {
   @BeforeEach
   public void joinLions() {
     lions = new LinkedList<AbstractAnimals>();
-    lions.add(new Lion(4, "lions", 2.3, 60, "women", 10, false, 25));
     lions.add(new Lion(2, "lions", 2.2, 70, "man", 12, true, 26));
+    lions.add(new Lion(4, "lions", 2.3, 60, "women", 10, false, 25));
     lions.add(new Lion(3, "lions", 2.1, 65, "women", 11, false, 27));
   }
 

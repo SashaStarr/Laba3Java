@@ -87,5 +87,11 @@ public abstract class AbstractAnimals {
         + ", sizeInM=" + sizeInM + ", weightInKg=" + weightInKg + ", point=" + point
         + ", ageInYears=" + ageInYears + ", huntForPrey=" + huntForPrey + "]";
   }
-
+  public String getHeaders() {
+    return "foodConsumedInKilo,kind,sizeInM,weightInKg, point,ageInYears,huntForPrey";
+  }
+  public String toCSV() {
+    return foodConsumedInKilo + ", " + kind + ", " + sizeInM + ", " + weightInKg + ", " + point + ", " + ageInYears
+        + ", " + huntForPrey ;
+  }
 }
